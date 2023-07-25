@@ -1,0 +1,90 @@
+/*contain the piano*/
+.piano{
+    background-color: brown;
+    width: 15vw;
+    padding: 3vmin;
+}
+/*white tile ,contains an empty section and a span to show note*/
+.w_Tile{
+    z-index: 50;
+    display: grid;
+    margin-top: 0px;
+    grid: 5vh / 15vw 0px;
+}
+
+/*the white key*/
+.w_Tile section{
+    z-index: 35;
+    border: solid;
+    background-color: white;
+    width:15vw;
+    height: 5vh;
+}
+
+/*if its after black tile moves it up*/
+.aft_b_Tile{
+    margin-top: -1.3vh;
+}
+
+
+/*the note of white key*/
+.w_Tile span{
+    margin-left: 0.5vw;
+    margin-top: 1.5vh;
+    font-size: 2vh;
+    visibility: hidden;
+}
+
+.w_Tile:hover section{
+    box-shadow: 0.4vw 0.4vh 0.4vmin gray , 0.2vw 0.2vh red inset;
+    z-index: 40;
+}
+
+/*show on hover*/
+.w_Tile:hover span{
+    color: red;
+    visibility: visible;
+}
+
+/*incase user hovers on the note*/
+.w_Tile:hover span:hover{
+    visibility: hidden;
+}
+
+
+/*black tile ,contains an empty section and a span to show note*/
+.b_Tile{
+    z-index: 100;
+    display: grid;
+    margin-top: -1.3vh;
+    grid: 2.6vh / 10vw 0px;
+}
+
+/*the black key*/
+.b_Tile section{
+    z-index: 50;
+    background-color:black;
+    width:10vw;
+    height: 2.6vh;
+}
+
+.b_Tile:hover section {
+    box-shadow: 0.4vw 0.4vh 0.4vmin gray , 0.2vw 0.2vh red inset;
+}
+
+/*the note of black key*/
+.b_Tile span{
+    z-index: 40;
+    margin-left: 0.5vw;
+    font-size: 2vh;
+    visibility: hidden;
+}
+/*show on hover*/
+.b_Tile:hover span{
+    color: red;
+    visibility: visible;
+}
+/*incase user hovers on the note*/
+.b_Tile:hover span:hover{
+    visibility: hidden;
+}

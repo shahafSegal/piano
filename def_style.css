@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    margin-top: 160px;
+}
+
+
+header{
+    z-index: 105;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98vw;
+    padding: 1vw;
+}
+footer{
+    text-align: center;
+    width: 98vw;
+    padding: 1vw;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2vmin;
+    width: max-content;
+}
+
+.prjTbl{
+    display: block;
+    max-height: 13vh;
+    overflow-y: scroll;
+}
+
+td, th {padding: 8px; }
+
+
+a,span{
+    text-decoration: none;
+}

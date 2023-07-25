@@ -25,7 +25,7 @@ table {
     margin-right: auto;
     text-align: center;
     font-size: 2vmin;
-    width: max-content;
+    width: fit-content;
 }
 
 .prjTbl{
